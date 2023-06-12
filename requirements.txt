@@ -1,0 +1,6 @@
+geopandas 
+folium 
+matplotlib 
+mapclassify 
+jupyterlab
+
