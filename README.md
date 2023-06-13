@@ -25,30 +25,30 @@ For Windows Platforms, install Geopandas and Numpy dependencies from the Unoffic
 
 ## Workflow
 
-### Assign Footprints to Survey Points
+### 1. Assign Footprints to Survey Points
 
 `1_join_footprints.py`
 
 Join with footprints to derive floor area (from manually digitised, remotely sensed and OSM footprints)
 
-### Align and Merge Key Attributes
+### 2. Align and Merge Key Attributes
 
 `2_align_attributes.py`
 
 Identify and align attributes across field surveys (PCRAFI 2012, PCRAFI 2022) and official census building type data
 
-### Building Code Classficiation
+### 3. Building Code Classficiation
 
 `3_building_code_classifier.py`
 
-**Typology => Wall Materal + Roof Material + Levels + Use Type**
+<mark>**Typology => Wall Materal + Roof Material + Levels + Use Type**</mark>
 
 |Code|Wall Material||||
 |--|------------------|------------------|-----------|-----|
 |SM|Fibre-cement sheet|Fibre-cement board|Metal sheet|Fibre|
 |CB|Masonry|Concrete|Concrete Block||
 |WO|Plywood Sheet||||
-|WC|Timber Cement|Timber|Timber board||
+|WC|Timber Cement|Timber|Timber Board||
 |TR|Traditional||||
 |OT|Unknown|None|Other||
 
@@ -69,25 +69,25 @@ Identify and align attributes across field surveys (PCRAFI 2012, PCRAFI 2022) an
 |R|Residential|
 |NR|Non-Residential|
 
-### Generate Multi-Resolution Flexible Grids 
+### 4. Generate Multi-Resolution Flexible Grids 
 
 `4_country_grid_flexible.py'
 
 Generate flexible national-level multi-resolution grids
 
-### Populate Classification Code Statistics within Grid
+### 5. Populate Classification Code Statistics within Grid
 
-`5_populate_grid_pcrafy.py`
+`5_populate_grid_pcrafi.py`
 
 Build Statistics of Buildng Classificaiton Typology Types and Total Floor Area within Grid. Spatially Distribute Classified Building Exposure Data to Flexible Multi-Grids using Weighted Regression
 
-### Calculate and Embed Uniform Construction Costing
+### 6. Calculate and Embed Uniform Construction Costing
 
 `6_uniform_construction_costing.py`
 
 Embed UCC/m2 Per Classification Code within Grid
 
-### Census-based Validation of Expsoure
+### 7. Census-based Validation of Expsoure
 
 `7_census_validation.py`
 
