@@ -10,7 +10,8 @@ os.environ['USE_PYGEOS'] = '0'
 import geopandas as gpd
 
 country_code = "to"
-data_file = f"{country_code}_merged.gpkg"
+path = "/home/sachin/Projects/pcrafi_alignment/"
+data_file = f"{path}{country_code}_merged.gpkg"
 gdf = gpd.read_file(data_file)
 print(list(gdf.columns))
 

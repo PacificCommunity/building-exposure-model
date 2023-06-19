@@ -107,10 +107,9 @@ Embed UCC/m2 Per Classification Code within Grid
 
 Build Code Classification and Statistics witin Census Admin Level 3 and validation of Grid-level Typology and Building Counts. Validate and conduct statistical checks using official census data spatially map to administrative levels (eg: villages, wards)
 
-<mark>
 <hr/>
-Additional Classifications
-</mark>
+
+## Additional Classifications
 
 1) Educational (Schools, Universities etc.)
 2) Government/Public

@@ -42,5 +42,5 @@ for gid in gid_list:
 
 #output
 gdf_grid.loc[gdf_grid['total_floor_area'] == 0, 'total_buildings'] = 0
-gdf_grid.to_file(country_code.lower() + "_exposure_grid.gpkg", layer=country_code.lower() + "_test", driver="GPKG")
+gdf_grid.to_file(country_code.lower() + "_exposure_grid.gpkg", layer=country_code.lower() + "_exposure", driver="GPKG")
 print("Finished.")
