@@ -69,11 +69,25 @@ Identify and align attributes across field surveys (PCRAFI 2012, PCRAFI 2022) an
 |R|Residential|
 |NR|Non-Residential|
 
+*(see additional classifications below)*
+
 ### 4. Generate Multi-Resolution Flexible Grids 
 
-`4_country_grid_flexible.py'
+`4_country_grid_flexible.py`
 
-Generate flexible national-level multi-resolution grids
+Generate flexible national-level multi-resolution grids based on population distributions *(excluding PNG)*.
+
+- **25%** of Pacific people live within 1 km of the coast.
+
+- **90%** of Pacific people live within 5 km of the coast.
+
+- **97%** of Pacific people live within 10 km of the coast.
+
+|Coastal Buffer | Grid Size |
+|---------------|-----------|
+| 1 km | 100 m2
+| 5 km | 500 m2
+|10 km | 1000m2
 
 ### 5. Populate Classification Code Statistics within Grid
 
@@ -93,4 +107,16 @@ Embed UCC/m2 Per Classification Code within Grid
 
 Build Code Classification and Statistics witin Census Admin Level 3 and validation of Grid-level Typology and Building Counts. Validate and conduct statistical checks using official census data spatially map to administrative levels (eg: villages, wards)
 
+<mark>
+<hr/>
+Additional Classifications
+</mark>
 
+1) Educational (Schools, Universities etc.)
+2) Government/Public
+3) Religious/Cultural 
+4) Agricultural
+5) Industrial (Heavy, Light)
+6) Commercial (split: Retail/Trade; Offices/Services; Entertainment) 
+7) Hospital/Health Buildings
+8) Tourism/Hospitality 

@@ -51,7 +51,9 @@ gdf.loc[gdf["levels"] > 3, "level_type"] = "H"
 
 #residential (R/NR)
 gdf.loc[gdf["use"] == "Residential", "residential"] = "R"
-gdf.loc[gdf["use"] == "Unknow", "residential"] = "R"
+gdf.loc[gdf["use"] == "Unknown", "residential"] = "R"
+gdf.loc[gdf["subuse"] == "Residential", "residential"] = "R"
+gdf.loc[gdf["subuse"] == "Unknown", "residential"] = "R"
 gdf.loc[gdf['residential'].isnull(), 'residential'] = 'NR'
 
 gdf['class_code'] = gdf['code_wm'] + "_" + gdf['code_rm'] + "_" + gdf['level_type'] + "_" +  gdf['residential']
