@@ -3,4 +3,5 @@ folium
 matplotlib 
 mapclassify 
 jupyterlab
+geocube
 
